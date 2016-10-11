@@ -5,7 +5,7 @@ const url = '/v1'
 
 export default {
   getPosts(callback) {
-    const getUrl = '${url}/list'
+    const getUrl = `${url}/list`
     request.get(getUrl)
     .end((err, res) => {
       if(err) {
@@ -21,5 +21,32 @@ export default {
         })
       }
     })
-  }
+  },
+    add(post, callback) {
+    const addUrl = `${url}/add`
+    request.post(addUrl)
+      .send(post)
+      .end((err, res) => {
+        if (err) {
+          callback(err)
+        } else {
+          post.id = res.body.newId
+          callback(null, post)
+        }
+      })
+   }
+
+  //  update (posts, callback) {
+  //    const updateURL = `${url}/update/${posts.id}`
+  //    request.put(updateURL)
+  //    .send({id: post.id, title: posts.text, body: posts.text})
+  //    .end((err) => {
+  //      if (err) {
+  //        callback(err)
+  //      } else {
+  //        callback(null, posts)
+  //      }
+  //    })
+  //  }
+
 }

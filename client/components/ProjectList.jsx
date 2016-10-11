@@ -18,7 +18,7 @@ export default React.createClass({
     )
   },
   updateProjects (err) {
-    const updateProjects = this.props.posts.map((posts) => {
+    const updateProjects = this.props.posts.map((post) => {
 
     })
     this.setState(updatedProjects)
