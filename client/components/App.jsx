@@ -1,14 +1,9 @@
 import React from 'react'
 
 import Header from './Header'
-import Navigation from './Navigation'
-import Comments from './Comments'
-import CommentForm from './CommentForm'
-
-import ProjectItem from './ProjectItem'
+import AddProject from './AddProject'
 import ProjectList from './ProjectList'
 import projectApi from '../projectApi'
-import AddProject from './AddProject'
 
 export default React.createClass({
   getInitialState() {
@@ -31,11 +26,12 @@ export default React.createClass({
           <AddProject add={this.addProject} />
         </div>
         <div>
-        <projectList
-          posts={this.state.posts} />
-      </div>
-      </div>
+          <ProjectList
+          posts={this.state.posts}
 
+          />
+        </div>
+      </div>
     )
   },
 

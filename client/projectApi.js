@@ -14,8 +14,7 @@ export default {
         const posts = res.body.map(posts => {
           return {
             id: posts.id,
-            title: posts.text,
-            body:posts.text
+            title: posts.text
 
           }
         })

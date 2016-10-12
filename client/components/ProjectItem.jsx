@@ -4,7 +4,7 @@ export default React.createClass({
   render() {
     return (
       <div className ='project-item'>
-        {this.props.text}
+        {this.props.title}
       </div>
     )
   }

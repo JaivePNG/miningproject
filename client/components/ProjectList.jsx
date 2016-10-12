@@ -8,19 +8,11 @@ export default React.createClass({
       <div className="project-list">
         {this.props.posts.map((projectItem) => {
           return <ProjectItem
-          id={projectItem.id}
-          key={projectItem.id}
-          title={projectItem.text}
-          body={projectItem.text} />
-        })
-      }
+            id={projectItem.id}
+            key={projectItem.id}
+            title={projectItem.title} />
+        })}
       </div>
     )
-  },
-  updateProjects (err) {
-    const updateProjects = this.props.posts.map((post) => {
-
-    })
-    this.setState(updatedProjects)
   }
 })

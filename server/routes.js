@@ -17,7 +17,7 @@ module.exports = {
       res.json({newId: newIds[0]})
     })
     .catch(function(err) {
-      res.send(500)
+      res.sendStatus(500)
     })
   }
 
