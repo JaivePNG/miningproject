@@ -1,9 +1,14 @@
 import React from 'react'
 
 import Header from './Header'
+<<<<<<< HEAD
 import ProjectItem from './ProjectItem'
 import ProjectList from './ProjectList'
 import AddProject from './AddProject'
+=======
+import AddProject from './AddProject'
+import ProjectList from './ProjectList'
+>>>>>>> bc603f95bfeb8f96c0f00da066336d8a2c3a6fb6
 import projectApi from '../projectApi'
 
 export default React.createClass({
@@ -27,9 +32,17 @@ export default React.createClass({
           <AddProject add={this.addProject} />
         </div>
         <div>
+<<<<<<< HEAD
         <ProjectList
           posts={this.state.posts} />
       </div>
+=======
+          <ProjectList
+          posts={this.state.posts}
+
+          />
+        </div>
+>>>>>>> bc603f95bfeb8f96c0f00da066336d8a2c3a6fb6
       </div>
     )
   },
