@@ -1,14 +1,10 @@
 import React from 'react'
 
 import Header from './Header'
-import Navigation from './Navigation'
-import Comments from './Comments'
-import CommentForm from './CommentForm'
-
 import ProjectItem from './ProjectItem'
 import ProjectList from './ProjectList'
-import projectApi from '../projectApi'
 import AddProject from './AddProject'
+import projectApi from '../projectApi'
 
 export default React.createClass({
   getInitialState() {
@@ -31,11 +27,10 @@ export default React.createClass({
           <AddProject add={this.addProject} />
         </div>
         <div>
-        <projectList
+        <ProjectList
           posts={this.state.posts} />
       </div>
       </div>
-
     )
   },
 
@@ -54,3 +49,19 @@ addProject (projectTitle) {
   })
  }
 })
+
+// addTodo (todoText) {
+//     const todo = {
+//       text: todoText,
+//       isComplete: false
+//     }
+//     todoApi.add(todo, (err, newTodo) => {
+//       if (!err) {
+//         const newState = {
+//           todos: [...this.state.todos, newTodo]
+//         }
+//         this.setState(newState)
+//       }
+//     })
+//   }
+// })

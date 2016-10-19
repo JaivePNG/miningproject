@@ -8,8 +8,7 @@ module.exports = {
 
   add: function (post) {
     return db('posts').insert({
-      title: post.text
-      // body: post.text
+      title: post.title
     })
   }
 }

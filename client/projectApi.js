@@ -14,11 +14,12 @@ export default {
         const posts = res.body.map(posts => {
           return {
             id: posts.id,
-            title: posts.text,
-            body:posts.text
+            title: posts.title,
+            body:posts.body
 
           }
         })
+        callback(null, posts)
       }
     })
   },
@@ -35,6 +36,7 @@ export default {
         }
       })
    }
+}
 
   //  update (posts, callback) {
   //    const updateURL = `${url}/update/${posts.id}`
@@ -48,5 +50,3 @@ export default {
   //      }
   //    })
   //  }
-
-}
