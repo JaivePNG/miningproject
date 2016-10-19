@@ -43,13 +43,9 @@
     "enzyme": "^2.4.1",
     "jsx-loader": "^0.13.2",
     "knex": "^0.12.2",
-<<<<<<< HEAD
     "morgan": "^1.7.0",
     "node-inspector": "^0.12.8",
-=======
-    "node-inspector": "^0.12.8",
     "nodemon": "^1.11.0",
->>>>>>> bc603f95bfeb8f96c0f00da066336d8a2c3a6fb6
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "sqlite3": "^3.1.6",

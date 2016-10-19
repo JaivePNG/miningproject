@@ -14,13 +14,8 @@ export default {
         const posts = res.body.map(posts => {
           return {
             id: posts.id,
-<<<<<<< HEAD
             title: posts.title,
             body:posts.body
-=======
-            title: posts.text
->>>>>>> bc603f95bfeb8f96c0f00da066336d8a2c3a6fb6
-
           }
         })
         callback(null, posts)
